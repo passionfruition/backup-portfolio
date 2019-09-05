@@ -51,3 +51,25 @@ ul {
   margin-left: 3rem;
   margin-bottom: 3rem;
 }
+
+.project-title {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.project-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#profile-picture {
+  height: 300px;
+}
