@@ -15,25 +15,18 @@ html, body {
 .other-nav {
   background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
 }
-/* .page-content {
-  margin-top: 100px;
-} */
 
-/* .pointer {
-  cursor: pointer;
-} */
 .send-button {
   background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
 }
+
 #contact {
   background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
 }
 
 .contact-info {
-  /* text-align: center;  */
     display: flex !important;
     align-items: center !important;
-    /* justify-content: center !important; */
 }
 
 ul {
