@@ -84,7 +84,7 @@ a:hover {
 }
 
 #profile-picture {
-  height: 375px;
+  height: 400px;
   margin-bottom: 20px;
 }
 
@@ -132,10 +132,15 @@ p, label, li {
   margin: 0 auto;
   width: 30%;
   margin-top: 50px;
-  color: white!;
+  color: white !important;
 }
 
 .social-button {
   color: white;
   margin: 15px;
+}
+
+.icon:hover {
+  color: white !important;
+  opacity: 0.7 !important;
 }
