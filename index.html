@@ -2,24 +2,28 @@
 <html lang="en">
 
 <head>
-  <title>madeleine</title>
+  <title>dev-madeleine</title>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/b73f20f84b.js"></script>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css">
   </link>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-likes-next/dist/social-likes_birman.css">
 </head>
 
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">madeleine</a>
+      <a class="navbar-brand" href="#">dev-madeleine</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,9 +53,9 @@
   <header class="masthead" id="home">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="font-weight-light">Hi, my name is Madeleine.</h1>
-          <p class="lead">Welcome to my web page.</p>
+        <div id="welcome-text" class="col-12 text-center">
+          <h1 class="font-weight-light">Hi there, my name is Madeleine.</h1>
+          <p class="lead">I'm a web developer.</p>
         </div>
       </div>
     </div>
@@ -61,32 +65,32 @@
   <div id="about">
     <section class="py-5">
       <div class="container">
-        <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">About Me</h2>
+        <h2 class="font-weight-light text-lg-left mt-4 mb-0">About</h2>
         <hr class="mt-2 mb-5">
         <div class="row">
-          <div class="col-3">
-            <img id="profile-picture" src="assets/images/profile.jpeg">
+          <div class="col-12 col-lg-3 col-xl-3 profile-div text-center">
+            <img id="profile-picture" src="assets/images/portrait.PNG">
           </div>
-          <div class="col-9">
-            <!-- <p>
-              Boise--the land of potatoes--is where I am from. My parents moved here from Cambodia before
-              I was born and we ended up moving to Seattle where I've spent the majority of my life. I
-              grew
-              up with two older brothers and enjoyed playing soccer and listening to music in my freetime.
+          <div class="col-12 col-lg-9 col-xl-9">
+            <p>
+              I am a Full Stack Web Developer with customer based experience ranging from restaurant service to GIS
+              Analyst work at a transportation planning consultant company.
+              Both worlds helped me ensure end-users are met with high quality products and positive experiences.
             </p>
             <p>
-              I recently graduated from the University of Washington in Seattle with a degree in
-              Geographic
-              Information Systems (GIS). I currently love hiking, going to concerts, and eating good FOOD.
+              I received a Bachelors in Geographic Information Systems (GIS), minor in Informatics and most recently a
+              certificate in Full Stack Web Development all through the University of Washington, Seattle.
+              It has led me to a strong knowledge of HTML, CSS, JavaScript, several frameworks and backend.
+              Through these different perspectives, I have gained communication, problem-solving, and adaptability
+              skills that have moulded myself to the developer I am today.
             </p>
             <p>
-              In my portfolio you will see pictures of my favorite foods but it will be updated with my
-              projects
-              as they come.
+              I have worked on many team projects including building a data analysis dashboard which increased my
+              knowledge of synergy and working with individuals of different backgrounds.
+              Throughout these experiences, I have found a passion in seeing the results of solving real-world problems
+              with complex code.
             </p>
-            <p>
-              Currently I am aspiring to be a Full Stack Developer. Stay tuned..
-            </p> -->
+            <a href="assets/20190913Resume.pdf" target="_blank" style="float:right;">MY RESUME</a>
           </div>
         </div>
       </div>
@@ -98,43 +102,92 @@
     <section class="py-5">
       <div class="container">
 
-        <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Portfolio</h2>
+        <h2 class="font-weight-light text-lg-left mt-4 mb-0">Portfolio</h2>
 
         <hr class="mt-2 mb-5">
 
-        <div class="row text-center text-lg-left">
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="https://madeleineprak.github.io/Word-Guess-Game/" target="_blank" class="d-block mb-4 h-100">
-              <img class="img-fluid img-thumbnail project-image" src="assets/images/wordguess.jpg" alt="">
-              <h4 class="project-title">Word Guess Game</h4>
+          <div class="row portfolio-project">
+          <div class="col-12 col-lg-9 col-xl-9 text-center">
+            <a href="https://madeleineprak.github.io/Find-My-Hike/" target="_blank" class="d-block mb-4 h-100">
+              <img class="img-fluid project-image img-thumbnail" src="assets/images/hike.PNG" alt="">
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="https://madeleineprak.github.io/Crystal-Collector/" target="_blank" class="d-block mb-4 h-100e">
-              <img class="img-fluid project-image img-thumbnail" src="assets/images/crystalcollector.jpg" alt="">
-              <h4 class="project-title">Crystal Collector</h4>
-            </a>
+          <div class="col-12 col-lg-3 col-xl-3">
+              <h4 class="project-title">Find My Hike</h4>
+              <p>An app where you can find a hike in any given area along with all the information you need to plan a trip there.</p>
+              <a href="https://github.com/madeleineprak/Find-My-Hike" target="_blank" class="fab fa-github-square project-button"></a>
+              <a href="https://madeleineprak.github.io/Find-My-Hike/" target="_blank" class="fas fa-external-link-square-alt project-button"></a>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="https://madeleineprak.github.io/Trivia-Game/" target="_blank" class="d-block mb-4 h-100">
-              <img class="img-fluid project-image img-thumbnail" src="assets/images/vine.jpg" alt="">
-              <h4 class="project-title">Vine Trivia</h4>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
+          <div class="row portfolio-project">
+          
+          <div class="col-12 col-lg-9 col-xl-9 text-center">
             <a href="https://madeleineprak.github.io/Gif-Vacation/" target="_blank" class="d-block mb-4 h-100">
-              <img class="img-fluid project-image img-thumbnail" src="assets/images/vacation.jpg" alt="">
-              <h4 class="project-title">GIF Getaway</h4>
+              <img class="img-fluid project-image img-thumbnail" src="assets/images/vacation.PNG" alt="">
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-6">
+          <div class="col-12 col-lg-3 col-xl-3">
+              <h4 class="project-title">GIF Getaway</h4>
+              <p>An app that lets you take a mental vaction no matter where you are. Click on any vacation image to increase immersion.</p>
+              <a href="https://github.com/madeleineprak/Gif-Vacation" target="_blank" class="fab fa-github-square project-button"></a>
+              <a href="https://madeleineprak.github.io/Gif-Vacation/" target="_blank" class="fas fa-external-link-square-alt project-button"></a>
+            </div>
+          </div>
+          <div class="row portfolio-project">
+          
+          <div class="col-12 col-lg-9 col-xl-9 text-center">
+            <a href="https://madeleineprak.github.io/Trivia-Game/" target="_blank" class="d-block mb-4 h-100">
+              <img class="img-fluid project-image img-thumbnail" src="assets/images/vine.PNG" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-lg-3 col-xl-3">
+              <h4 class="project-title">Vine Trivia</h4>
+              <p>Remember the beloved app Vine? Take this quiz to see how well you knew it. Be careful, it's timed!</p>
+              <a href="https://github.com/madeleineprak/Trivia-Game" target="_blank" class="fab fa-github-square project-button"></a>
+              <a href="https://madeleineprak.github.io/Trivia-Game/" target="_blank" class="fas fa-external-link-square-alt project-button"></a>
+            </div>
+          </div>
+          <div class="row portfolio-project">
+          
+          <div class="col-12 col-lg-9 col-xl-9 text-center">
+            <a href="https://madeleineprak.github.io/Word-Guess-Game/" target="_blank" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail project-image" src="assets/images/wordguess.PNG" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-lg-3 col-xl-3">
+              <h4 class="project-title">Word Guess Game</h4>
+              <p>A game where you guess the celebrity from the two given pictures. See you many you can get.</p>
+              <a href="https://github.com/madeleineprak/Word-Guess-Game" target="_blank" class="fab fa-github-square project-button"></a>
+              <a href="https://madeleineprak.github.io/Word-Guess-Game/" target="_blank" class="fas fa-external-link-square-alt project-button"></a>
+            </div>
+          </div>
+          <div class="row portfolio-project">
+          
+          <div class="col-12 col-lg-9 col-xl-9 text-center">
             <a href="https://madeleineprak.github.io/Train-Scheduler/" target="_blank" class="d-block mb-4 h-100">
               <img class="img-fluid project-image img-thumbnail" src="assets/images/train.png" alt="">
-              <h4 class="project-title">Train Scheduler</h4>
             </a>
           </div>
-        </div>
+          <div class="col-12 col-lg-3 col-xl-3">
+              <h4 class="project-title">Train Scheduler</h4>
+              <p>An app that lets you to view schedules from various trains and even add your own. </p>
+              <a href="https://github.com/madeleineprak/Train-Scheduler" target="_blank" class="fab fa-github-square project-button"></a>
+              <a href="https://madeleineprak.github.io/Train-Scheduler/" target="_blank" class="fas fa-external-link-square-alt project-button"></a>
+            </div>
+          </div>
+          <div class="row portfolio-project">
+          <div class="col-12 col-lg-9 col-xl-9 text-center">
+            <a href="https://madeleineprak.github.io/Crystal-Collector/" target="_blank" class="d-block mb-4 h-100e">
+              <img class="img-fluid project-image img-thumbnail" src="assets/images/crystal.PNG" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-lg-3 col-xl-3">
+              <h4 class="project-title">Crystal Collector</h4>
+              <p>A game where you have to reach the random number by collecting jewels worth a certain amount of points.</p>
+              <a href="https://github.com/madeleineprak/Crystal-Collector" target="_blank" class="fab fa-github-square project-button"></a>
+              <a href="https://madeleineprak.github.io/Crystal-Collector/" target="_blank" class="fas fa-external-link-square-alt project-button"></a>
+            </div>
+          </div>
       </div>
     </section>
   </div>
@@ -143,41 +196,78 @@
   <div id="contact">
     <section class="py-5">
       <div class="container contact-section">
+          <h2 class="font-weight-light text-lg-left mt-4 mb-0" style="color:white;">Get In Touch</h2>
+          <hr class="mt-2 mb-5">
         <div class="row">
-          <div class="contact-info col-4">
+          <div class="contact-info col-12 col-lg-4 col-xl-4">
+            <!-- <div class="social-likes social-likes_visible">
+                  <div data-service="facebook" title="Share link on Facebook">Facebook</div>
+                  <div data-service="twitter" title="Share link on Twitter">Twitter</div>
+                  <div data-service="linkedin" title="Share link on Google+"></div>
+                </div> -->
+
             <ul>
-              <li><span class="icon"><i class="fas fa-map-pin fa-fw"></i></span>&nbsp; Location</li>
-              <li class="info">Seattle, WA</li>
-              <li><span class="icon"><i class="fas fa-mobile-alt fa-fw"></i></span>&nbsp; Phone</li>
-              <li class="info">(123)-456-7890</li>
-              <li><span class="icon"><i class="far fa-envelope fa-fw"></i></span>&nbsp; Email</li>
-              <li class="info">madeleineprak@gmail.com</li>
+              <li class="info"><span><i class="fas fa-map-pin fa-fw icon"></i>&nbsp;Seattle, WA</span></li>
+              <li class="info"><span><i class="fas fa-mobile-alt fa-fw icon"></i>&nbsp;(123)-456-7890</span>
+              </li>
+              <li class="info"><span><i class="far fa-envelope fa-fw icon"></i>&nbsp;madeleineprak@gmail.com</span></li>
             </ul>
           </div>
-          <div class="contact-form col-8">
-            <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Get In Touch</h2>
-            <hr class="mt-2 mb-5">
+          <div class="contact-form col-12 col-lg-8 col-xl-8">
             <form>
               <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                <input type="text" class="form-control" id="name-input" placeholder="">
               </div>
               <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+                <input type="email" class="form-control" id="email-input" placeholder="">
               </div>
               <div class="form-group">
                 <label>Message</label>
-                <textarea class="form-control" id="inputMessage" rows="10"></textarea>
+                <textarea class="form-control" id="message-input" placeholder="" rows="10"></textarea>
               </div>
-              <button type="submit" class="btn send-button">Send Message</button>
+              <button id="submit-button" type="submit" class="btn send-button" data-toggle="modal"
+                data-target="#sentMessageModal">Send Message</button>
             </form>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div id="social-buttons">
+            <a href="https://github.com/madeleineprak" target="_blank" class="fab fa-github-square social-button"></a>
+            <a href="https://www.linkedin.com/in/madeleine-prak-1a3111176/" target="_blank" class="fab fa-linkedin-square social-button"></a>
+            <!-- <a href="#" class="fab fa-twitter-square social-button"></a>
+            <a href="#" class="fab fa-facebook-square social-button"></a> -->
           </div>
         </div>
       </div>
     </section>
   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="sentMessageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Message Sent!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="assets/javascript/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/social-likes-next/dist/social-likes.min.js"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 </body>
 
 </html>
