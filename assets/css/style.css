@@ -16,10 +16,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* .navbar-brand {
-  color: #BFD1FF !important;
-} */
-
 .other-nav {
   background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
 }
@@ -63,7 +59,6 @@ ul {
 }
 .project-title {
   text-decoration: none;
-  /* text-align: center; */
   color: black;
 }
 
@@ -96,17 +91,11 @@ a:hover {
   color: #FDFD79;
 }
 
-/* buttons */
-/* Style all font awesome icons */
 .fab, .fas, .far {
-  /* padding: 20px; */
   font-size: 2rem;
-  /* text-align: center; */
   text-decoration: none;
-  /* border-radius: 50%; */
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
@@ -128,8 +117,6 @@ p, label, li {
 }
 
 .fab:hover, .fas:hover {
-  /* color: #FDFD79; */
-  /* color: white; */
   opacity: 0.7;
 }
 
