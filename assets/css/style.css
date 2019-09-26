@@ -112,7 +112,7 @@ a:hover {
 }
 
 #submit-button:hover {
-  background-color: #FDFD79;
+  opacity: 0.7;
 }
 
 p, label, li {
@@ -123,8 +123,13 @@ p, label, li {
   color: #FDFD79;
 }
 
-.fab:hover, .fas:hover {
+.project-button:hover {
   color: #FDFD79;
+}
+
+.fab:hover, .fas:hover {
+  /* color: #FDFD79; */
+  /* color: white; */
   opacity: 0.7;
 }
 
@@ -138,6 +143,10 @@ p, label, li {
 .social-button {
   color: white;
   margin: 15px;
+}
+
+.social-button:hover {
+  color:white;
 }
 
 .icon:hover {
