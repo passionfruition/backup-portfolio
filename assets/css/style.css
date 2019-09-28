@@ -138,5 +138,18 @@ p, label, li {
 
 .icon:hover {
   color: white !important;
-  opacity: 0.7 !important;
+  /* opacity: 0.7 !important; */
+}
+
+#email-link {
+  text-decoration: none;
+  color: gray;
+}
+
+#email-link:hover {
+  opacity: 0.7;
+}
+
+.no-hover:hover {
+  opacity: 1;
 }
