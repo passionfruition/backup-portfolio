@@ -18,7 +18,7 @@ $(document).ready(function() {
             description: "An app with an interactive map that keeps track of all the awesome local mom-and-pop shops in an area.",
             ideation: "",
             tools: ["Sequelize", "MapBox", "GeocoderAPI", "Materialize"],
-            github: "https://github.com/madeleineprak/Mom-And-Pop",
+            github: "https://github.com/madeleineprak/Mom-N-Pop",
             website: "https://momnpop.herokuapp.com/"
         },
         {
