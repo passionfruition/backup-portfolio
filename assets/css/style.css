@@ -1,155 +1,206 @@
 html, body {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-body {
-  font-family: "HKGroteskRegular", Roboto, sans-serif !important;
-}
-
-.masthead {
-    height: 80vh;
-    min-height: 400px;
-    background-color: #BFD1FF;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.other-nav {
-  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-}
-
-#submit-button {
-  color: gray;
-  background-color: white;
-}
-
-#contact {
-  background-color: #BFD1FF;
-}
-
-.contact-info {
-    display: flex !important;
-    align-items: center !important;
-}
-
-#welcome-text {
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.fas, .far {
-  width: 35px;
-  height: 35px;
-  color: #FDFD79;
-}
-
-.info {
-  /* margin-left: 3rem; */
-  margin-bottom: 3rem;
-}
-.icon {
-  color: white;
-}
-.project-title {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.project-image {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  padding: 25px;
-  margin-right: 10px;
-}
-
-.portfolio-project {
-  margin-bottom: 50px;
-}
-
-#profile-picture {
-  height: 400px;
-  margin-bottom: 20px;
-}
-
-.project-image:hover {
-  opacity: .5;
-}
-
-.lead {
-  color: #FDFD79;
-}
-
-.fab, .fas, .far {
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-#submit-button:hover {
-  opacity: 0.7;
-}
-
-p, label, li {
-  color: gray;
+a {
+    z-index: 1;
+    /* position: absolute; */
 }
 
 .project-button {
-  color: #FDFD79;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.fab, .fas, .far {
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#github-link {
+    margin: 0;
+    padding: 0;
 }
 
-.project-button:hover {
-  color: #FDFD79;
+.details-header {
+    margin-top: 15px;
+}
+#about p {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.fab:hover, .fas:hover {
-  opacity: 0.7;
+#profile-pic {
+    max-width: 200px;
+    /* margin: 0 auto; */
 }
 
-#social-buttons {
-  margin: 0 auto;
-  width: 30%;
-  margin-top: 50px;
-  color: white !important;
+#social-links {
+    margin: 0 auto;
+    text-align: center;
 }
 
-.social-button {
-  color: white;
-  margin: 15px;
+#social-links a {
+    color: black;
+    cursor: pointer;
 }
 
-.social-button:hover {
-  color:white;
+#web-return-to-top, #mobile-return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.icon:hover {
-  color: white !important;
-  /* opacity: 0.7 !important; */
+.fa-chevron-up {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-#email-link {
-  text-decoration: none;
-  color: gray;
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
 }
 
-#email-link:hover {
-  opacity: 0.7;
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
 
-.no-hover:hover {
-  opacity: 1;
+/* Extra Things */
+h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+.card {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    /* border: 3px solid lightgray; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#mobile-projects img, #web-project-photos img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#mobile-projects img:hover, #web-project-photos img:hover {
+    opacity: .5;
+    background-color: #BFD1FF;
+    cursor: pointer;
+}
+
+#mobile-projects img:focus, #mobile-projects img:active, #web-project-photos img:focus, #web-project-photos img:active {
+    border: 3px solid lightgray;
+}
+
+/* .navbar-brand {
+    font-family: 'TruenoBlackOutlineItalic';
+    font-weight: normal;
+    font-size: 150%;
+    color: white;
+} */
+
+.media-content {
+    /* Gets rid of tiny scrollbar with project title */
+    overflow: hidden;
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 768px) {
+    #mobile-projects {
+        display: block;
+    }
+
+    #web-projects {
+        display: none;
+    }
+
+    #mobile-projects .project-tool {
+        margin-right: 5px;
+        display: inline-block;
+    }
+}
+
+/* Screens larger than mobile */
+@media only screen and (min-width: 768px) {
+    body {
+        font-family: "HKGroteskRegular", Roboto, sans-serif !important;
+    }
+
+    h1 {
+        font-weight: bolder;
+        font-size: x-large;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    h2 {
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    #mobile-projects {
+        display: none;
+    }
+
+    #web-projects {
+        display: block;
+    }
+    #web-project-photos {
+        max-height: 90vh;
+        overflow:auto;
+    }
+
+    #web-project-details {
+        position: relative;
+        max-height: 90vh;
+        /* overflow: none; */
+        /* background-color: lightgray; */
+        border-radius: 5px;
+    }
+
+    #web-project-photos img {
+        border-radius: 5px;
+        height: 60vh;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    /* width */
+    span {
+    background-color: #BFD1FF;
+        margin-right: 5px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+::-webkit-scrollbar {
+    display: none;
+  }
 }
