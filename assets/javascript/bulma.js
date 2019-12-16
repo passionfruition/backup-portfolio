@@ -152,15 +152,19 @@ $(document).ready(function() {
                                 $("<p>").addClass("subtitle is-6").attr("href", "https://github.com/madeleineprak").attr("target", "_blank").text("@madeleineprak")
                             )
                         ),
-                        contentSection.append(
-                            $("<a>").attr("href", project.github).attr("target", "_blank").addClass("project-button").text("GITHUB ").append(
-                                $("<i>").addClass("fab fa-github-square")
-                            ),
-                            $("<a>").attr("href", project.website).attr("target", "_blank").addClass("project-button").text("DEPLOYED ").append(
-                                $("<i>").addClass("fas fa-external-link-square-alt")
-                            ),
-                            $("<br>")
-                        )
+                        contentSection,
+                        $("<a>").attr("href", project.github).attr("target", "_blank").addClass("button is-dark project-button").append(
+                            $("<span>").addClass("icon is-small").append(
+                                $("<i>").addClass("fab fa-github-square")),
+                                $("<span>").text("GITHUB")
+                        ),
+                        $("<a>").attr("href", project.website).attr("target", "_blank").addClass("button is-dark project-button").append(
+                            $("<span>").addClass("icon is-small").append(
+                                $("<i>").addClass("fas fa-external-link-square-alt")),
+                                $("<span>").text("DEPLOYED")
+                        ),
+                        $("<br>")
+                        
                     )
                 )
             );
@@ -176,27 +180,30 @@ $(document).ready(function() {
 
     function displayProjectDetails(project){
         var technologies = project.tools;
-        var techSection = $("<h2>").text("Technologies Used").addClass("details-header");
+        // var techSection = $("<h2>").text("Technologies Used").addClass("details-header");
+        var toolDiv = $("<div>");
         $("#web-project-details").empty();
         var div = $("<div>").append(
-            
-            $("<h2>").text(project.name),
+            $("<h2>").text(project.name).addClass("title"),
             $("<p>").text(project.description),
-            $("<a>").attr("href", project.github).attr("target", "_blank").addClass("project-button").text("GITHUB ").append(
-                $("<i>").addClass("fab fa-github-square")
-            ),
-            $("<a>").attr("href", project.website).attr("target", "_blank").addClass("project-button").text("DEPLOYED ").append(
-                $("<i>").addClass("fas fa-external-link-square-alt")
-            ),
-            // $("<h2>").text("Ideation"),
-            techSection,
-            $("<h2>").text("Preview").addClass("details-header"),
-            $("<img>").attr("src", project.gif).addClass("project-gif")
-            // $("<img>").attr("src", project.photo)
+            $("<h2>").text("Technologies Used").addClass("details-header title is-4"),
+            toolDiv,
+            $("<h2>").text("Preview").addClass("details-header title is-4"),
+            $("<img>").attr("src", project.gif).addClass("project-gif"),
+            $("<br>"),
+            $("<br>"),
+            $("<a>").attr("href", project.github).attr("target", "_blank").addClass("button is-dark project-button").append(
+                $("<span>").addClass("icon is-small").append(
+                    $("<i>").addClass("fab fa-github-square")),
+                    $("<span>").text("GITHUB")),
+            $("<a>").attr("href", project.website).attr("target", "_blank").addClass("button is-dark project-button").append(
+                $("<span>").addClass("icon is-small").append(
+                    $("<i>").addClass("fas fa-external-link-square-alt")),
+                    $("<span>").text("DEPLOYED"))
         )
-        techSection.append($("<br>"));
+        // techSection.append($("<br>"));
         technologies.forEach(function(technology) {
-            techSection.append($("<span>").text("#"+technology))
+            toolDiv.append($("<span>").text("#"+technology).addClass("tool-span"))
         })
         $("#web-project-details").append(div);
     }

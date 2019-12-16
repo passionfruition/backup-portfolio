@@ -27,29 +27,31 @@ a {
     margin-top: 15px;
 }
 #about p {
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
 }
 
 #profile-pic {
-    max-width: 200px;
+    max-width: 300px;
     /* margin: 0 auto; */
 }
 
 #social-links {
-    margin: 0 auto;
-    text-align: center;
+    /* margin: 0 auto;
+    text-align: center; */
 }
 
 #social-links a {
-    color: black;
     cursor: pointer;
 }
+/* #about-page {
+    width: 60%;
+} */
 
 #web-return-to-top, #mobile-return-to-top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     width: 50px;
@@ -116,12 +118,9 @@ h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{c
     border: 3px solid lightgray;
 }
 
-/* .navbar-brand {
-    font-family: 'TruenoBlackOutlineItalic';
-    font-weight: normal;
-    font-size: 150%;
-    color: white;
-} */
+.social-icon {
+    display: inline-block;
+}
 
 .media-content {
     /* Gets rid of tiny scrollbar with project title */
@@ -194,8 +193,8 @@ h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{c
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     /* width */
-    span {
-    background-color: #BFD1FF;
+    .tool-span {
+        background-color: #c5dafe;
         margin-right: 5px;
         border-radius: 20px;
         padding: 5px;
