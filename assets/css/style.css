@@ -35,27 +35,10 @@ a {
 .details-header {
     margin-top: 15px;
 }
-#about p {
-    /* margin-left: 20px;
-    margin-right: 20px; */
-}
-
-#profile-pic {
-    max-width: 300px;
-    /* margin: 0 auto; */
-}
-
-#social-links {
-    /* margin: 0 auto;
-    text-align: center; */
-}
 
 #social-links a {
     cursor: pointer;
 }
-/* #about-page {
-    width: 60%;
-} */
 
 #web-return-to-top, #mobile-return-to-top {
     position: fixed;
@@ -136,8 +119,38 @@ h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{c
     overflow: hidden;
 }
 
+#about-page {
+    width: 100%;
+}
+
+#profile-pic {
+    max-width: 300px;
+    /* margin: 0 auto; */
+}
+
 /* Mobile screens */
 @media only screen and (max-width: 768px) {
+    
+    #about-page {
+        width: 80%;
+        margin: 0 auto;
+        /* text-align: center; */
+    }
+    .buttons {
+        width: 33.33%;
+        margin: 0 auto;
+    }
+
+    #about-profile {
+        text-align: center;
+    }
+
+    #profile-pic {
+        width: 200px;
+        /* margin: 0 auto; */
+    }
+    
+
     #mobile-projects {
         display: block;
     }

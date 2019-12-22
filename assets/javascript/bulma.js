@@ -2,6 +2,16 @@ $(document).ready(function() {
 
     var projects = [
         {
+            name: "Google Books",
+            photo: "https://cdn.vox-cdn.com/thumbor/64OEm0HvabxPdBV4fES4KTsqB1I=/0x0:1000x417/1200x800/filters:focal(691x161:851x321)/cdn.vox-cdn.com/uploads/chorus_image/image/65029446/playbooks_beta.max_1000x1000.0.png",
+            gif: "https://cdn.vox-cdn.com/thumbor/64OEm0HvabxPdBV4fES4KTsqB1I=/0x0:1000x417/1200x800/filters:focal(691x161:851x321)/cdn.vox-cdn.com/uploads/chorus_image/image/65029446/playbooks_beta.max_1000x1000.0.png",
+            description: "An app where users can search, view, save and delete Google Books.",
+            ideation: "",
+            tools: ["React", "React Router", "Mongoose", "Bulma", "Heroku"],
+            github: "https://github.com/madeleineprak/Google-Books",
+            website: "https://googlebooks-mp.herokuapp.com/"
+        },
+        {
             name: "Memory Game",
             photo: "./assets/images/MemoryGame.PNG",
             gif: "./assets/images/MemoryGame.gif",
