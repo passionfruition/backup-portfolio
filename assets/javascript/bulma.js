@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
     var projects = [
-        {
-            name: "Google Books",
-            photo: "https://cdn.vox-cdn.com/thumbor/64OEm0HvabxPdBV4fES4KTsqB1I=/0x0:1000x417/1200x800/filters:focal(691x161:851x321)/cdn.vox-cdn.com/uploads/chorus_image/image/65029446/playbooks_beta.max_1000x1000.0.png",
-            gif: "https://cdn.vox-cdn.com/thumbor/64OEm0HvabxPdBV4fES4KTsqB1I=/0x0:1000x417/1200x800/filters:focal(691x161:851x321)/cdn.vox-cdn.com/uploads/chorus_image/image/65029446/playbooks_beta.max_1000x1000.0.png",
-            description: "An app where users can search, view, save and delete Google Books.",
-            ideation: "",
-            tools: ["React", "React Router", "Mongoose", "Bulma", "Heroku"],
-            github: "https://github.com/madeleineprak/Google-Books",
-            website: "https://googlebooks-mp.herokuapp.com/"
-        },
+        // {
+        //     name: "Google Books",
+        //     photo: "https://cdn.vox-cdn.com/thumbor/64OEm0HvabxPdBV4fES4KTsqB1I=/0x0:1000x417/1200x800/filters:focal(691x161:851x321)/cdn.vox-cdn.com/uploads/chorus_image/image/65029446/playbooks_beta.max_1000x1000.0.png",
+        //     gif: "https://cdn.vox-cdn.com/thumbor/64OEm0HvabxPdBV4fES4KTsqB1I=/0x0:1000x417/1200x800/filters:focal(691x161:851x321)/cdn.vox-cdn.com/uploads/chorus_image/image/65029446/playbooks_beta.max_1000x1000.0.png",
+        //     description: "An app where users can search, view, save and delete Google Books.",
+        //     ideation: "",
+        //     tools: ["React", "React Router", "Mongoose", "Bulma", "Heroku"],
+        //     github: "https://github.com/madeleineprak/Google-Books",
+        //     website: "https://googlebooks-mp.herokuapp.com/"
+        // },
         {
             name: "Memory Game",
             photo: "./assets/images/MemoryGame.PNG",
@@ -41,26 +41,26 @@ $(document).ready(function() {
             github: "https://github.com/madeleineprak/Mom-N-Pop",
             website: "https://momnpop.herokuapp.com/"
         },
-        {
-            name: "Burger Queen",
-            photo: "./assets/images/BurgerQueen.png",
-            gif: "./assets/images/BurgerQueen.gif",
-            description: "An app where the user can eat as many burgers as they want without gaining any weight.",
-            ideation: "",
-            tools: ["Express", "ExpressHandlebars", "MySQL", "Heroku"],
-            github: "https://github.com/madeleineprak/Burger-Queen",
-            website: "https://burgerqueen-devmad.herokuapp.com/"
-        },
-        {
-            name: "Hey Bud",
-            photo: "./assets/images/HeyBud.PNG",
-            gif: "./assets/images/HeyBud.gif",
-            description: "A dating app but for friends. The user can take a survey and find a buddy that has the highest compatibility based on a number of survey questions.",
-            ideation: "",
-            tools: ["Express", "Heroku"],
-            github: "https://github.com/madeleineprak/Friend-Finder",
-            website: "https://heybud-devmadeleine.herokuapp.com/"
-        },
+        // {
+        //     name: "Burger Queen",
+        //     photo: "./assets/images/BurgerQueen.png",
+        //     gif: "./assets/images/BurgerQueen.gif",
+        //     description: "An app where the user can eat as many burgers as they want without gaining any weight.",
+        //     ideation: "",
+        //     tools: ["Express", "ExpressHandlebars", "MySQL", "Heroku"],
+        //     github: "https://github.com/madeleineprak/Burger-Queen",
+        //     website: "https://burgerqueen-devmad.herokuapp.com/"
+        // },
+        // {
+        //     name: "Hey Bud",
+        //     photo: "./assets/images/HeyBud.PNG",
+        //     gif: "./assets/images/HeyBud.gif",
+        //     description: "A dating app but for friends. The user can take a survey and find a buddy that has the highest compatibility based on a number of survey questions.",
+        //     ideation: "",
+        //     tools: ["Express", "Heroku"],
+        //     github: "https://github.com/madeleineprak/Friend-Finder",
+        //     website: "https://heybud-devmadeleine.herokuapp.com/"
+        // },
         // {
         //     name: "Bamazon",
         //     photo: "./assets/images/Bamazon.png",
