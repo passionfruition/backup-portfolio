@@ -183,7 +183,7 @@ $(document).ready(function () {
             })
             contentSection.append(
                 $("<br>"),
-                $("<time>").attr("datetime", "2019-11-23").text("3:05 AM - 23 Nov 2019")
+                // $("<time>").attr("datetime", "2019-11-23").text("3:05 AM - 23 Nov 2019")
             )
         })
     }
