@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Madeleleine Prak</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Madeleine Prak</title>
     <!-- Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/b73f20f84b.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css" />
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css" />
@@ -21,14 +18,12 @@
 </head>
 
 <body>
-
     <div class="container is-fluid">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
-                    <img src="assets/images/Madeleine.png" style="object-fit:cover;" width="200" height="50">
+                    <h1 class="subtitle name-logo">MADELEINE PRAK</h1>
                 </a>
-
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                     data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -36,37 +31,99 @@
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href="index.html">Projects</a>
-                    <a class="navbar-item" href="about.html">About</a>
-                    <a class="navbar-item" href="20200105Resume.pdf" target="_blank">Resumé</a>
+                    <a class="navbar-item" href="index.html">ABOUT</a>
+                    <a class="navbar-item" href="portfolio.html">PORTFOLIO</a>
+                    <a class="navbar-item" href="resume20200202.pdf" target="_blank">RESUME</a>
                 </div>
             </div>
         </nav>
-        <br>
-        <div id="mobile-projects" style="position:relative;">
-            <a href="javascript:" id="mobile-return-to-top"><i class="fas fa-chevron-up"></i></a>
-            <!-- <h3><i class="fas fa-arrow-down"></i> <i class="fas fa-arrow-down"></i> <i class="fas fa-arrow-down"></i></h3> -->
-        </div>
-        <div id="web-projects">
-            <div class="columns">
-                <!-- Project photo carousel -->
-                <div id="web-project-photos" class="column is-half">
-                    <a href="javascript:" id="web-return-to-top"><i class="fas fa-chevron-up"></i></a>
+
+        <div class="columns is-centered" style="margin-top: 5vh;">
+            <div class="column is-4" id="about-profile">
+                <img id="profile-pic" src="assets/images/ProfileCropped.jpeg">
+                <br>
+                <br>
+                <div id="social-links">
+                    <p class="buttons">
+                        <a href="https://www.linkedin.com/in/madeleine-prak/" target="_blank"
+                            class="button is-black is-outlined">
+                            <span class="icon is-small">
+                                <i class="fab fa-linkedin-in social-icon"></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/madeleineprak" target="_blank" class="button is-black is-outlined">
+                            <span class="icon is-small">
+                                <i class="fab fa-github-alt social-icon"></i>
+                            </span>
+                        </a>
+                        <!-- <a class="button is-black is-outlined">
+                                <span class="icon is-small">
+                                    <i class="fab fa-instagram social-icon"></i>
+                                </span>
+                            </a> -->
+                        <a href="https://twitter.com/devmadeleine" target="_blank" class="button is-black is-outlined">
+                            <span class="icon is-small">
+                                <i class="fab fa-twitter social-icon"></i>
+                            </span>
+                        </a>
+                        <br>
+                    </p>
+                    <a id="email-link" href="mailto:madeleineprak@gmail.com" target="_blank">madeleineprak@gmail.com</a>
+                    <br>
+                    <a href="tel:425-737-8950" target="_blank">425-737-8950</a>
                 </div>
-                <!-- Project details -->
-                <div id="web-project-details" class="column">
-                    <h1>Please scroll on the left to explore my work.</h1>
+            </div>
+            <div class="column is-7" id="about-page">
+                <div id="about">
+                    <h3 class="subtitle bio-intro">Hi there, I'm Madeleine.</h3>
+
+                    <p>
+                        I am a GIS Full Stack Developer who gets excited about building impactful apps with complex code
+                        to solve real-world problems. I am skilled in HTML/CSS, JavaScript, modern JS libraries,
+                        UX/UI Design, MERN Stack and RESTful API. When it comes to work,
+                        I want to be involved in projects that I find challenging alongside people that inspire me.
+                    </p>
+                    <br>
+                    <p>
+                        I received a Bachelors in Geographic Information Systems and minor
+                        in Informatics from the University of Washington, Seattle, and
+                        most recently graduated from the UW Full Stack Web
+                        Development Bootcamp. My background is in customer based
+                        experience ranging from restaurant service to working as a
+                        GIS Technician at a transportation planning consultant company.
+                    </p>
+                    <br>
+                    <p>
+                        When I’m not working I enjoy exploring beautiful PNW hikes, visiting Vancouver, and finding new
+                        songs to add to my coding playlist.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="skills is-centered">
+                    <img class="skill-icon" src="./assets/images/skill-icons/arcgis.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/bootstrap.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/bulma.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/gitbash.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/htmlcssjs.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/jquery.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/mongodb.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/mysql.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/nodjs.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/npm.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/react.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/sql.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/vuejs.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/gitgui.png">
+                    <img class="skill-icon" src="./assets/images/skill-icons/python.png">
                 </div>
             </div>
         </div>
-    </div>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/bulma.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="assets/javascript/bulma.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     var projects = [
         // {
@@ -21,16 +21,16 @@ $(document).ready(function() {
             github: "https://github.com/madeleineprak/Memory-Game",
             website: "https://madeleineprak.github.io/Memory-Game/"
         },
-        {
-            name: "Get The Scoop",
-            photo: "./assets/images/GetTheScoop.PNG",
-            gif: "./assets/images/GetTheScoop.gif",
-            description: "An app that keeps track of hacker news and lets the user add personalized notes.",
-            ideation: "",
-            tools: ["Mongoose", "Express", "Express-Handlebars", "Cheerio"],
-            github: "https://github.com/madeleineprak/Get-The-Scoop",
-            website: "https://fast-inlet-41689.herokuapp.com/"
-        },
+        // {
+        //     name: "Get The Scoop",
+        //     photo: "./assets/images/GetTheScoop.PNG",
+        //     gif: "./assets/images/GetTheScoop.gif",
+        //     description: "An app that keeps track of hacker news and lets the user add personalized notes.",
+        //     ideation: "",
+        //     tools: ["Mongoose", "Express", "Express-Handlebars", "Cheerio"],
+        //     github: "https://github.com/madeleineprak/Get-The-Scoop",
+        //     website: "https://fast-inlet-41689.herokuapp.com/"
+        // },
         {
             name: "Mom 'n Pop",
             photo: "./assets/images/MomandPop.PNG",
@@ -90,27 +90,27 @@ $(document).ready(function() {
             tools: ["Parsley.js", "GoogleDevelopers", "HikingProjectAPI"],
             github: "https://github.com/madeleineprak/Find-My-Hike",
             website: "https://madeleineprak.github.io/Find-My-Hike/"
-        },
-        {
-            name: "GIF Getaway",
-            photo: "./assets/images/MentalVacation.PNG",
-            gif: "./assets/images/GIFGetaway.gif",
-            description: "An app that lets you take a mental vaction no matter where you are. Click on any vacation image to increase immersion.",
-            ideation: "",
-            tools: ["GiphyAPI", "Bootstrap"],
-            github: "https://github.com/madeleineprak/Gif-Vacation",
-            website: "https://madeleineprak.github.io/Gif-Vacation/"
-        },
-        {
-            name: "Vine Trivia",
-            photo: "./assets/images/VineQuiz.PNG",
-            gif: "./assets/images/VineTrivia.gif",
-            description: "Remember the beloved app Vine? Take this quiz to see how well you knew it. Be careful, it's timed!",
-            ideation: "",
-            tools: ["jQuery", "Bootstrap", "Timer"],
-            github: "https://github.com/madeleineprak/Trivia-Game",
-            website: "https://madeleineprak.github.io/Trivia-Game/"
         }
+        // {
+        //     name: "GIF Getaway",
+        //     photo: "./assets/images/MentalVacation.PNG",
+        //     gif: "./assets/images/GIFGetaway.gif",
+        //     description: "An app that lets you take a mental vaction no matter where you are. Click on any vacation image to increase immersion.",
+        //     ideation: "",
+        //     tools: ["GiphyAPI", "Bootstrap"],
+        //     github: "https://github.com/madeleineprak/Gif-Vacation",
+        //     website: "https://madeleineprak.github.io/Gif-Vacation/"
+        // },
+        // {
+        //     name: "Vine Trivia",
+        //     photo: "./assets/images/VineQuiz.PNG",
+        //     gif: "./assets/images/VineTrivia.gif",
+        //     description: "Remember the beloved app Vine? Take this quiz to see how well you knew it. Be careful, it's timed!",
+        //     ideation: "",
+        //     tools: ["jQuery", "Bootstrap", "Timer"],
+        //     github: "https://github.com/madeleineprak/Trivia-Game",
+        //     website: "https://madeleineprak.github.io/Trivia-Game/"
+        // }
         // {
         //     name: "Celebrity Word Guess Game",
         //     photo: "./assets/images/WordGuess.PNG",
@@ -144,7 +144,7 @@ $(document).ready(function() {
     ]
 
     function displayMobileProjects() {
-        projects.forEach(function(project) {
+        projects.forEach(function (project) {
             var technologies = project.tools;
             var contentSection = $("<div>").addClass("content").text(project.description + " ");
 
@@ -166,20 +166,20 @@ $(document).ready(function() {
                         $("<a>").attr("href", project.github).attr("target", "_blank").addClass("button is-dark project-button").append(
                             $("<span>").addClass("icon is-small").append(
                                 $("<i>").addClass("fab fa-github-square")),
-                                $("<span>").text("GITHUB")
+                            $("<span>").text("GITHUB")
                         ),
                         $("<a>").attr("href", project.website).attr("target", "_blank").addClass("button is-dark project-button").append(
                             $("<span>").addClass("icon is-small").append(
                                 $("<i>").addClass("fas fa-external-link-square-alt")),
-                                $("<span>").text("DEPLOYED")
+                            $("<span>").text("DEPLOYED")
                         ),
                         $("<br>")
-                        
+
                     )
                 )
             );
-            technologies.forEach(function(technology) {
-                contentSection.append($("<a>").text("#"+technology).addClass("project-tool"))
+            technologies.forEach(function (technology) {
+                contentSection.append($("<a>").text("#" + technology).addClass("project-tool"))
             })
             contentSection.append(
                 $("<br>"),
@@ -188,39 +188,39 @@ $(document).ready(function() {
         })
     }
 
-    function displayProjectDetails(project){
+    function displayProjectDetails(project) {
         var technologies = project.tools;
         // var techSection = $("<h2>").text("Technologies Used").addClass("details-header");
         var toolDiv = $("<div>");
         $("#web-project-details").empty();
         var div = $("<div>").append(
-            $("<h2>").text(project.name).addClass("title"),
+            $("<h2>").text(project.name).addClass("title is-4"),
             $("<p>").text(project.description),
-            $("<h2>").text("Technologies Used").addClass("details-header title is-4"),
-            toolDiv,
-            $("<h2>").text("Preview").addClass("details-header title is-4"),
-            $("<img>").attr("src", project.gif).addClass("project-gif"),
-            $("<br>"),
             $("<br>"),
             $("<a>").attr("href", project.github).attr("target", "_blank").addClass("button is-dark project-button").append(
                 $("<span>").addClass("icon is-small").append(
                     $("<i>").addClass("fab fa-github-square")),
-                    $("<span>").text("GITHUB")),
+                $("<span>").text("GITHUB")),
             $("<a>").attr("href", project.website).attr("target", "_blank").addClass("button is-dark project-button").append(
                 $("<span>").addClass("icon is-small").append(
                     $("<i>").addClass("fas fa-external-link-square-alt")),
-                    $("<span>").text("DEPLOYED"))
+                $("<span>").text("DEPLOYED")),
+            $("<h2>").text("Technologies Used").addClass("details-header title is-4"),
+            toolDiv,
+            $("<h2>").text("Preview").addClass("details-header title is-4"),
+            $("<img>").attr("src", project.gif).addClass("project-gif"),
+            $("<br>")
         )
         // techSection.append($("<br>"));
-        technologies.forEach(function(technology) {
-            toolDiv.append($("<span>").text("#"+technology).addClass("tool-span"))
+        technologies.forEach(function (technology) {
+            toolDiv.append($("<span>").text("#" + technology).addClass("tool-span"))
         })
         $("#web-project-details").append(div);
     }
 
     function displayProjectPhotos() {
         // $("#web-project-photos").empty();
-        projects.forEach(function(project) {
+        projects.forEach(function (project) {
             $("#web-project-photos").append(
                 $("<img>").attr("src", project.photo).attr("data-name", project.name).addClass("click-photo")
             )
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }
 
     // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function() {
+    $(".navbar-burger").click(function () {
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
@@ -237,18 +237,18 @@ $(document).ready(function() {
     displayMobileProjects();
     displayProjectPhotos();
 
-    $(".click-photo").click(function() {
+    $(".click-photo").click(function () {
         var clickedProject = $(this).attr("data-name");
-        projects.forEach(function(project) {
+        projects.forEach(function (project) {
             if (project.name == clickedProject) {
                 displayProjectDetails(project);
             }
         })
     })
-  });
+});
 
 //       ===== Scroll to Top ==== 
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $("#mobile-return-to-top").fadeIn(200);    // Fade in the arrow
     } else {
@@ -256,13 +256,13 @@ $(window).scroll(function() {
     }
 });
 
-$("#mobile-return-to-top").click(function() {      // When arrow is clicked
+$("#mobile-return-to-top").click(function () {      // When arrow is clicked
     $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
+        scrollTop: 0                       // Scroll to top of body
     }, 500);
 });
 
-$("#web-project-photos").scroll(function() {
+$("#web-project-photos").scroll(function () {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $("#web-return-to-top").fadeIn(200);    // Fade in the arrow
     } else {
@@ -270,8 +270,8 @@ $("#web-project-photos").scroll(function() {
     }
 });
 
-$("#web-return-to-top").click(function() {      // When arrow is clicked
+$("#web-return-to-top").click(function () {      // When arrow is clicked
     $('#web-project-photos').animate({
-        scrollTop : 0                       // Scroll to top of body
+        scrollTop: 0                       // Scroll to top of body
     }, 500);
 });
