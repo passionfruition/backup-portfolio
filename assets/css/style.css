@@ -6,7 +6,8 @@ html, body {
 
 .name-logo {
     font-family: 'Fredoka One', cursive;
-    font-size: 30px;
+    font-size: 20px;
+    color: white;
 }
 
 .bio-intro {
@@ -32,7 +33,8 @@ a {
 }
 
 .navbar {
-    padding: 0px 50px 0px 50px;
+    padding: 0vw 8vw 0vw 8vw;
+    width: 100%;
 }
 
 .project-button {
@@ -143,13 +145,17 @@ a {
 } */
 
 #profile-pic {
-    max-width: 350px;
+    max-width: 250px;
     /* margin: 0 auto; */
 }
 
 /* Mobile screens */
 @media only screen and (max-width: 768px) {
     
+    .name-logo {
+        font-size: 20px;
+    }
+
     #social-links .button {
         font-size: .75rem;
         margin: 0 auto;
@@ -177,6 +183,8 @@ a {
 
     #mobile-projects {
         display: block;
+        width: 80%;
+        margin: 0 auto;
     }
 
     #web-projects {
@@ -189,8 +197,8 @@ a {
     }
 }
 
-/* Screens larger than mobile */
-@media only screen and (min-width: 768px) {
+/* Screens tablet */
+@media only screen and (min-width: 769px) {
     #about {
         padding: 0px 30px 0px 30px;
     }
@@ -239,12 +247,28 @@ a {
     }
     /* width */
     .tool-span {
-        background-color: #c5dafe;
+        background-color: hsl(348, 100%, 61%);
         margin-right: 5px;
         border-radius: 20px;
         padding: 5px;
+        color: white;
     }
 ::-webkit-scrollbar {
     display: none;
   }
+}
+
+/* Screens larger than mobile */
+@media only screen and (min-width: 1065px) {
+
+    #profile-pic {
+    max-width: 350px;
+    /* margin: 0 auto; */
+}
+
+    .name-logo {
+        font-size: 50px;
+    }
+
+   
 }
