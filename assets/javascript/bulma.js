@@ -11,16 +11,16 @@ $(document).ready(function () {
         //     github: "https://github.com/madeleineprak/Google-Books",
         //     website: "https://googlebooks-mp.herokuapp.com/"
         // },
-        {
-            name: "Memory Game",
-            photo: "./assets/images/MemoryGame.PNG",
-            gif: "./assets/images/MemoryGame.gif",
-            description: "A game where the user's goal is to click a unique image each time to get the most points.",
-            ideation: "",
-            tools: ["React", "Unsplash API", "Bulma", "bulma-toast"],
-            github: "https://github.com/madeleineprak/Memory-Game",
-            website: "https://madeleineprak.github.io/Memory-Game/"
-        },
+        // {
+        //     name: "Memory Game",
+        //     photo: "./assets/images/MemoryGame.PNG",
+        //     gif: "./assets/images/MemoryGame.gif",
+        //     description: "A game where the user's goal is to click a unique image each time to get the most points.",
+        //     ideation: "",
+        //     tools: ["React", "Unsplash API", "Bulma", "bulma-toast"],
+        //     github: "https://github.com/madeleineprak/Memory-Game",
+        //     website: "https://madeleineprak.github.io/Memory-Game/"
+        // },
         // {
         //     name: "Get The Scoop",
         //     photo: "./assets/images/GetTheScoop.PNG",
@@ -90,6 +90,16 @@ $(document).ready(function () {
             tools: ["Parsley.js", "GoogleDevelopers", "HikingProjectAPI"],
             github: "https://github.com/madeleineprak/Find-My-Hike",
             website: "https://madeleineprak.github.io/Find-My-Hike/"
+        },
+        {
+            name: "Get The Scoop",
+            photo: "./assets/images/GetTheScoop.PNG",
+            gif: "./assets/images/GetTheScoop.gif",
+            description: "An app that keeps track of hacker news and lets the user add personalized notes.",
+            ideation: "",
+            tools: ["Mongoose", "Express", "Express-Handlebars", "Cheerio"],
+            github: "https://github.com/madeleineprak/Get-The-Scoop",
+            website: "https://fast-inlet-41689.herokuapp.com/"
         }
         // {
         //     name: "GIF Getaway",
