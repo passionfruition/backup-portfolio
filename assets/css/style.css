@@ -4,12 +4,17 @@ html, body {
     font-family: "HKGroteskRegular", Roboto, sans-serif !important;
 }
 
+.name-logo {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+}
+
 .bio-intro {
     font-weight: bold;
 }
 
 .navbar-end a {
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .skills img {
