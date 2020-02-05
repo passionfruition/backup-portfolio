@@ -35,11 +35,21 @@ $(document).ready(function () {
             name: "Mom 'n Pop",
             photo: "./assets/images/MomandPop.PNG",
             gif: "./assets/images/MomandPop.gif",
-            description: "An app with an interactive map that keeps track of all the awesome local mom-and-pop shops in an area.",
+            description: "A crowd-sourced interactive map app that keeps track of all the awesome local mom-and-pop shops in the Seattle area.",
             ideation: "",
             tools: ["Sequelize", "MapBox", "GeocoderAPI", "Materialize"],
             github: "https://github.com/madeleineprak/Mom-N-Pop",
             website: "https://momnpop.herokuapp.com/"
+        },
+        {
+            name: "Get The Scoop",
+            photo: "./assets/images/GetTheScoop.PNG",
+            gif: "./assets/images/GetTheScoop.gif",
+            description: "An app that keeps track of hacker news and lets you add personalized notes.",
+            ideation: "",
+            tools: ["Mongoose", "Express", "Express-Handlebars", "Cheerio"],
+            github: "https://github.com/madeleineprak/Get-The-Scoop",
+            website: "https://fast-inlet-41689.herokuapp.com/"
         },
         // {
         //     name: "Burger Queen",
@@ -90,16 +100,6 @@ $(document).ready(function () {
             tools: ["Parsley.js", "GoogleDevelopers", "HikingProjectAPI"],
             github: "https://github.com/madeleineprak/Find-My-Hike",
             website: "https://madeleineprak.github.io/Find-My-Hike/"
-        },
-        {
-            name: "Get The Scoop",
-            photo: "./assets/images/GetTheScoop.PNG",
-            gif: "./assets/images/GetTheScoop.gif",
-            description: "An app that keeps track of hacker news and lets the user add personalized notes.",
-            ideation: "",
-            tools: ["Mongoose", "Express", "Express-Handlebars", "Cheerio"],
-            github: "https://github.com/madeleineprak/Get-The-Scoop",
-            website: "https://fast-inlet-41689.herokuapp.com/"
         }
         // {
         //     name: "GIF Getaway",
