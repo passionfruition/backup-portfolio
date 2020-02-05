@@ -16,6 +16,7 @@ html, body {
 
 .navbar-end a {
     font-size: 17px;
+    padding: 0px 25px 0px 25px;
 }
 
 .skills img {
