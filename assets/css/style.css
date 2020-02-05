@@ -16,7 +16,6 @@ html, body {
 
 .navbar-end a {
     font-size: 17px;
-    padding: 0px 25px 0px 25px;
 }
 
 .skills img {
@@ -263,9 +262,13 @@ a {
 @media only screen and (min-width: 1065px) {
 
     #profile-pic {
-    max-width: 350px;
-    /* margin: 0 auto; */
-}
+        max-width: 350px;
+        /* margin: 0 auto; */
+    }
+
+    .navbar-end a {
+        padding: 0px 25px 0px 25px;
+    }
 
     .name-logo {
         font-size: 50px;
