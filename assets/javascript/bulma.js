@@ -60,6 +60,16 @@ $(document).ready(function () {
             tools: ["Mongoose", "Express", "Express-Handlebars", "Cheerio"],
             github: "https://github.com/madeleineprak/Get-The-Scoop",
             website: "https://fast-inlet-41689.herokuapp.com/"
+        },
+        {
+            name: "Memory Game",
+            photo: "./assets/images/MemoryGame.PNG",
+            gif: "./assets/images/MemoryGame.gif",
+            description: "A game where the user's goal is to click a unique image each time to get the most points.",
+            ideation: "",
+            tools: ["React", "Unsplash API", "Bulma", "bulma-toast"],
+            github: "https://github.com/madeleineprak/Memory-Game",
+            website: "https://madeleineprak.github.io/Memory-Game/"
         }
         // {
         //     name: "Burger Queen",
