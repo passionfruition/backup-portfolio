@@ -42,6 +42,16 @@ $(document).ready(function () {
             website: "https://momnpop.herokuapp.com/"
         },
         {
+            name: "Hike Finder",
+            photo: "./assets/images/HikeFinder.PNG",
+            gif: "./assets/images/FindMyHike.gif",
+            description: "An app where you can find a hike in any given area along with all the information you need to plan a trip there.",
+            ideation: "",
+            tools: ["Parsley.js", "GoogleDevelopers", "HikingProjectAPI"],
+            github: "https://github.com/madeleineprak/Find-My-Hike",
+            website: "https://madeleineprak.github.io/Find-My-Hike/"
+        },
+        {
             name: "Get The Scoop",
             photo: "./assets/images/GetTheScoop.PNG",
             gif: "./assets/images/GetTheScoop.gif",
@@ -50,7 +60,7 @@ $(document).ready(function () {
             tools: ["Mongoose", "Express", "Express-Handlebars", "Cheerio"],
             github: "https://github.com/madeleineprak/Get-The-Scoop",
             website: "https://fast-inlet-41689.herokuapp.com/"
-        },
+        }
         // {
         //     name: "Burger Queen",
         //     photo: "./assets/images/BurgerQueen.png",
@@ -91,16 +101,6 @@ $(document).ready(function () {
         //     github: "https://github.com/madeleineprak/LIRI-Node-App",
         //     website: ""
         // },
-        {
-            name: "Hike Finder",
-            photo: "./assets/images/HikeFinder.PNG",
-            gif: "./assets/images/FindMyHike.gif",
-            description: "An app where you can find a hike in any given area along with all the information you need to plan a trip there.",
-            ideation: "",
-            tools: ["Parsley.js", "GoogleDevelopers", "HikingProjectAPI"],
-            github: "https://github.com/madeleineprak/Find-My-Hike",
-            website: "https://madeleineprak.github.io/Find-My-Hike/"
-        }
         // {
         //     name: "GIF Getaway",
         //     photo: "./assets/images/MentalVacation.PNG",
